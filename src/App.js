@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import './App.css';
 import Card from './Card';
-import Example from './Example';
+import Header from './Header'
 
 function App() {
   return (
     <div className="App">
-      <Example />
+      <Header />
+      <Card type="STUDIO" surface="33m²" city="Saint-Omer" />
     </div>
   );
 }
