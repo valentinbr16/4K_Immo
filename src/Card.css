@@ -1,6 +1,6 @@
 .card {
     font-family: Montserrat ,Arial, Helvetica, sans-serif;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     border: 1px solid lightgrey;
     border-radius: 10px;
@@ -11,10 +11,28 @@
 
 .card>a {
     text-transform: uppercase;
-    color: red;
+    color: #c81517;
 }
 
 .aLouer {
+    display: block;
     font-size: 2.3rem;
-    color:darkred;
+    margin: 15px 0;
+    padding: 10px 30px;
+    background-color: #c81517;
+    color:white;
+}
+
+@media screen and (min-width: 992px) {
+    .card--flex {
+        display: flex;
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .card--flex {
+        max-width: 1050px;
+    }
 }

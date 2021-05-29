@@ -1,20 +1,44 @@
+.header__banner {
+    height: 100px;
+    display: flex;
+    margin: 30px 0 50px 0;
+    background-color: #c81517;
+}
+
 .header__logo {
-    width: 100px;
-    padding: 20px;
+    align-self: center;
+    height: 150%;
+    margin-left: 50px;
 }
 
-.header--white {
-    background-color: white;
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    transform: rotate(45deg);
-    bottom: -10%;
-    left:42%;
+.header__link {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin: 15px;
+    align-self: center;
 }
 
-.header {
-    position: relative;
-    text-align: center;
-    margin: 15px 0;
+@media screen and (min-width: 768px) {
+    .header__banner {
+        height: 120px;
+    }
+
+    .header__logo {
+        height: 200%;
+        margin-left: 75px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header__banner {
+        height: 150px;
+        margin: 50px 0 75px 0;
+    }
+
+    .header__logo {
+        height: 220%;
+        margin-left: 100px;
+    }
 }
