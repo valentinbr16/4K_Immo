@@ -5,23 +5,30 @@
     background-color: #c81517;
 }
 
-.form__mail, .form__comment {
+.form__mail, .form__comment, .form__firstname, .form__lastname  {
     width: 285px;
     padding: 5px;
     margin: 5px 0;
+}
+
+.form__label {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form__reason {
+    width: 300px;
+    padding: 5px;
+    margin: 5px 0;
+    color: grey;
 }
 
 .form__comment {
     height: 80px;
 }
 
-.form__firstname, .form__lastname {
-    width: 120px;
-    margin: 5px;
-    padding: 5px 10px;
-}
-
-.form__mail, .form__comment, .form__firstname, .form__lastname {
+.form__mail, .form__comment, .form__firstname, .form__lastname, .form__reason {
     border: solid 1px grey;
     border-radius: 5px;
 }
@@ -35,19 +42,34 @@
         width: 400px;
     }
 
+    .form__name {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .form__reason {
+        width: 410px;
+    }
+
     .form__firstname, .form__lastname {
-        width: 180px;
+        width: 188px;
+        margin: 5px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .form__mail, .form__comment  {
         width: 600px;
-        margin: 10px 0;
+        margin: 5px 0;
+    }
+    
+    .form__reason {
+        width: 612px;
     }
 
     .form__firstname, .form__lastname {
-        width: 280px;
-        margin: 10px 5px;
+        width: 290px;
+        margin: 5px;
     }
 }
