@@ -6,7 +6,7 @@
 }
 
 .form__mail, .form__comment, .form__firstname, .form__lastname  {
-    width: 285px;
+    width: 280px;
     padding: 5px;
     margin: 5px 0;
 }
@@ -18,7 +18,7 @@
 }
 
 .form__reason {
-    width: 300px;
+    width: 292px;
     padding: 5px;
     margin: 5px 0;
     color: grey;
@@ -26,6 +26,10 @@
 
 .form__comment {
     height: 80px;
+    min-width: 280px;
+    max-width: 280px;
+    min-height: 50px;
+    max-height: 80px;
 }
 
 .form__mail, .form__comment, .form__firstname, .form__lastname, .form__reason {
@@ -52,6 +56,11 @@
         width: 410px;
     }
 
+    .form__comment {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
     .form__firstname, .form__lastname {
         width: 188px;
         margin: 5px;
@@ -66,6 +75,11 @@
     
     .form__reason {
         width: 612px;
+    }
+
+    .form__comment {
+        min-width: 600px;
+        max-width: 600px;
     }
 
     .form__firstname, .form__lastname {
