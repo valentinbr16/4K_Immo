@@ -41,6 +41,12 @@
     border: solid 3px #c81517;
 }
 
+.footer__copyright {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .form__mail, .form__comment  {
         width: 400px;
