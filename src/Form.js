@@ -35,9 +35,12 @@ export default function Form() {
                 <div>
                     <textarea className="form__comment" id="comment" placeholder="Votre message" name="comment" id="comment"/>
                 </div>
+                <div>
+                    <input type="file" placeholder="Pièces jointes"/>
+                </div>
             </form>
             <p className="footer__copyright">Siège social: 11 rue Louis Lethien, 62420 BILLY-MONTIGNY	APE : 6820B SIRET : 898 321 666 000 15 TVA : FR42898321666 Capital : 15 000 €<br/>
-            Site réalisé par <em>Valentin Bruniau</em>: <a href="https://valentin-bruniau-danma.netlify.app">https://valentin-bruniau-danma.netlify.app</a>/</p>
+            Site réalisé par <em>Valentin Bruniau</em>: <a href="https://valentin-bruniau-danma.netlify.app">https://valentin-bruniau-danma.netlify.app/</a></p>
         </footer>
     )
 }
