@@ -39,7 +39,7 @@
 @media screen and (min-width: 992px) {
     .header__banner {
         height: 150px;
-        margin: 50px 0 75px 0;
+        margin: 30px 0 75px 0;
     }
 
     .header__logo {
