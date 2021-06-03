@@ -36,7 +36,7 @@ export default function Form() {
                     <textarea className="form__comment" id="comment" placeholder="Votre message" name="comment" id="comment"/>
                 </div>
                 <div>
-                    <input className="form__file" type="file"/>
+                    <input className="form__file" type="file" multiple/>
                 </div>
                 <div className="form__btn">
                     <input className="form__submit" type="submit" value="Envoyer"/>
