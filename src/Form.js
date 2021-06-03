@@ -36,7 +36,11 @@ export default function Form() {
                     <textarea className="form__comment" id="comment" placeholder="Votre message" name="comment" id="comment"/>
                 </div>
                 <div>
-                    <input type="file" placeholder="Pièces jointes"/>
+                    <input className="form__file" type="file"/>
+                </div>
+                <div className="form__btn">
+                    <input className="form__submit" type="submit" value="Envoyer"/>
+                    <input className="form__reset" type="reset" value="Réinitialiser"/>
                 </div>
             </form>
             <p className="footer__copyright">Siège social: 11 rue Louis Lethien, 62420 BILLY-MONTIGNY	APE : 6820B SIRET : 898 321 666 000 15 TVA : FR42898321666 Capital : 15 000 €<br/>

@@ -49,6 +49,34 @@
     width: 75%;
 }
 
+.form__file {
+    background-color: white;
+    border-radius: 5px;
+    width: 290px;
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    background-color: lightgray;
+    color: black;
+    padding: 15px 10px;
+}
+
+.form__btn {
+    max-width: 290px;
+    margin: 15px auto;
+}
+
+.form__submit, .form__reset {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
 @media screen and (min-width: 768px) {
     .form__mail, .form__comment  {
         width: 400px;
