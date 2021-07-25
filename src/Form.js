@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Form.css';
 
 export default function Form() {
@@ -31,7 +31,19 @@ export default function Form() {
                         <option value="autre">Autres</option>
                     </select>
                 </div>
+
+                <div>
+                    <input className="form__nbOfPerson" type="number" placeholder="Nombre de personnes" min='1' max='10' name="nbOfPerson" id="nbOfPerson" />
+                </div>
     
+                <div>
+                    <label htmlFor="reservationDateStart">Début :</label>
+                    <input type="date" id="reservationDateStart" name="reservationDateEntry"/>
+    
+                    <label htmlFor="reservationDateEnd">Fin :</label>
+                    <input type="date" id="reservationDateEnd" name="reservationDateEntry"/>
+                </div>
+
                 <div>
                     <textarea className="form__comment" id="comment" placeholder="Votre message" name="comment" id="comment"/>
                 </div>

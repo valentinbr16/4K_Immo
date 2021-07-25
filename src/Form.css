@@ -5,7 +5,7 @@
     background-color: #c81517;
 }
 
-.form__mail, .form__comment, .form__firstname, .form__lastname  {
+.form__mail, .form__comment, .form__firstname, .form__lastname, .form__nbOfPerson {
     width: 280px;
     padding: 5px;
     margin: 5px 0;
@@ -32,12 +32,12 @@
     max-height: 80px;
 }
 
-.form__mail, .form__comment, .form__firstname, .form__lastname, .form__reason {
+.form__mail, .form__comment, .form__firstname, .form__lastname, .form__reason, .form__nbOfPerson {
     border: solid 1px grey;
     border-radius: 5px;
 }
 
-.form__mail:focus, .form__comment:focus, .form__firstname:focus, .form__lastname:focus {
+.form__mail:focus, .form__comment:focus, .form__firstname:focus, .form__lastname:focus, .form__nbOfPerson:focus {
     border: solid 3px #c81517;
 }
 
@@ -79,7 +79,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .form__mail, .form__comment  {
+    .form__mail, .form__comment, .form__nbOfPerson  {
         width: 400px;
     }
 
@@ -120,7 +120,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .form__mail, .form__comment  {
+    .form__mail, .form__comment, .form__nbOfPerson  {
         width: 600px;
         margin: 5px 0;
     }
