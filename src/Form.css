@@ -5,17 +5,23 @@
     background-color: #c81517;
 }
 
-.form__mail, .form__comment, .form__firstname, .form__lastname, .form__nbOfPerson {
+.form__mail, .form__comment, .form__firstname, .form__lastname, .form__nbOfPerson, .form__date {
     width: 280px;
     padding: 5px;
     margin: 5px 0;
 }
 
-.form__label {
+.form__label, .form__dateLabel {
     margin: 5px 0;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.5);
 }
+
+.form__date__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .form__reason {
     width: 292px;
@@ -32,12 +38,12 @@
     max-height: 80px;
 }
 
-.form__mail, .form__comment, .form__firstname, .form__lastname, .form__reason, .form__nbOfPerson {
+.form__mail, .form__comment, .form__firstname, .form__lastname, .form__reason, .form__nbOfPerson, .form__date {
     border: solid 1px grey;
     border-radius: 5px;
 }
 
-.form__mail:focus, .form__comment:focus, .form__firstname:focus, .form__lastname:focus, .form__nbOfPerson:focus {
+.form__mail:focus, .form__comment:focus, .form__firstname:focus, .form__lastname:focus, .form__nbOfPerson:focus, .form__dates:focus {
     border: solid 3px #c81517;
 }
 
@@ -83,7 +89,7 @@
         width: 400px;
     }
 
-    .form__name {
+    .form__name, .form__dates {
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
@@ -94,7 +100,7 @@
         max-width: 400px;
     }
 
-    .form__firstname, .form__lastname {
+    .form__firstname, .form__lastname, .form__date {
         width: 188px;
         margin: 5px;
     }
@@ -130,7 +136,7 @@
         max-width: 600px;
     }
 
-    .form__firstname, .form__lastname {
+    .form__firstname, .form__lastname, .form__date {
         width: 290px;
         margin: 5px;
     }

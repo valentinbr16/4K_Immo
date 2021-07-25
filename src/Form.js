@@ -36,12 +36,16 @@ export default function Form() {
                     <input className="form__nbOfPerson" type="number" placeholder="Nombre de personnes" min='1' max='10' name="nbOfPerson" id="nbOfPerson" />
                 </div>
     
-                <div>
-                    <label htmlFor="reservationDateStart">Début :</label>
-                    <input type="date" id="reservationDateStart" name="reservationDateEntry"/>
+                <div className="form__dates">
+                    <div className="form__date__label">
+                        <label className="form__dateLabel" htmlFor="reservationDateStart">Début :</label>
+                        <input className="form__date" type="date" id="reservationDateStart" name="reservationDateEntry"/>
+                    </div>
     
-                    <label htmlFor="reservationDateEnd">Fin :</label>
-                    <input type="date" id="reservationDateEnd" name="reservationDateEntry"/>
+                    <div className="form__date__label">
+                        <label className="form__dateLabel" htmlFor="reservationDateEnd">Fin :</label>
+                        <input className="form__date" type="date" id="reservationDateEnd" name="reservationDateEntry"/>
+                    </div>
                 </div>
 
                 <div>
