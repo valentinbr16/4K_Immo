@@ -73,8 +73,9 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: lightgray;
-    color: black;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
