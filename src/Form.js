@@ -27,7 +27,10 @@ export default function Form() {
                     <select className="form__reason" name="reason" id="reason" placeholder="Veuillez choisir un motif" required>
                         <option value="renseignement">Renseignement</option>
                         <option value="visite">Demande de visite</option>
-                        <option value="prereservation">Préréservation</option>                    
+                        <optgroup label="Préréservation">
+                            <option value="saisonnier">Location saisonnière</option>
+                            <option value="longue_durée">Location longue durée</option>
+                        </optgroup>                    
                         <option value="autre">Autres</option>
                     </select>
                 </div>
@@ -47,6 +50,8 @@ export default function Form() {
                         <input className="form__date" type="date" id="reservationDateEnd" name="reservationDateEntry"/>
                     </div>
                 </div>
+
+                <p className="form__info">* Pour Reallon, la durée de séjour doit être d'une semaine minimum</p>
 
                 <div>
                     <textarea className="form__comment" id="comment" placeholder="Votre message" name="comment" id="comment"/>
