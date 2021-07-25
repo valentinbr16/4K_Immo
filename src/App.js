@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './App.css';
 import Card from './Card';
 import Header from './Header';
 import Intro from './Intro';

@@ -1,10 +1,50 @@
 .intro {
     background-color: black;
     padding: 30px;
+    margin-bottom: 60px;
 }
 
 .intro__img {
     display: block;
     width: 250px;
     margin: 0 auto;
+}
+
+.intro__text, .intro__title {
+    color: white;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.intro__text {
+    font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+    .intro {
+        display: flex;
+    }
+
+    .intro__text, .intro__title {
+        margin-inline: 50px;        
+    }
+
+    .intro {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .intro {
+        margin-top: 90px;
+        padding: 60px;
+    }
+
+    .intro__img {
+        width: 360px;
+        margin-left: 50px;
+    }
+
+    .intro__text, .intro__title {
+        margin-inline: 50px;        
+    }
 }
