@@ -56,9 +56,12 @@ export default function Form() {
                 <div>
                     <textarea className="form__comment" id="comment" placeholder="Votre message" name="comment" id="comment"/>
                 </div>
+
                 <div>
                     <input className="form__file" type="file" multiple/>
                 </div>
+                <p className="form__info">* Afin de faciliter et d'accélerer la demande de préréservation, veuillez joindre votre pièce d'identité</p>
+
                 <div className="form__btn">
                     <input className="form__submit" type="submit" value="Envoyer"/>
                     <input className="form__reset" type="reset" value="Réinitialiser"/>
