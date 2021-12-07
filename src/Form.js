@@ -5,7 +5,7 @@ export default function Form() {
 
     return (
         <footer>
-            <form className="form">
+            <form id='form' className="form">
                 <div id="contact" className="form__name">
                     <div>
                         <input className="form__firstname" id="firstname" placeholder="Nom" type="text" name="firstname" id="firstname" />

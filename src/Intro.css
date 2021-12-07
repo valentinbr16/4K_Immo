@@ -1,7 +1,7 @@
 .intro {
-    background-color: black;
+    background-color: rgb(25, 25, 25);
     padding: 30px;
-    margin-bottom: 60px;
+    margin-block: 30px;
 }
 
 .intro__img {
@@ -35,7 +35,7 @@
 
 @media screen and (min-width: 992px) {
     .intro {
-        margin-top: 90px;
+        margin-bottom: 90px;
         padding: 60px;
     }
 

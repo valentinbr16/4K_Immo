@@ -3,7 +3,7 @@ import './Intro.css';
 
 export default function Intro() {
     return (
-        <section className="intro">
+        <section id='intro' className="intro">
             <div>
                 <img className="intro__img" src="Carte_4KImmo.png" alt="Carte de france avec location des logements indiqués"/>
             </div>

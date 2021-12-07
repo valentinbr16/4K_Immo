@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header />
       <Intro />
-      <div className="card--flex">
+      <div id='cards' className="card--flex">
         <Card type="STUDIO" surface="33m²" city="Saint-Omer" />
         <Card type="T3" surface="80m²" city="Lens" />
         <Card type="T3" surface="20m²" city="Loos" />

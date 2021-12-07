@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 export default function Header() {
+    const [toggleClass, setToggleClass] = useState('navbar')
+
+    const toggleNavbar = () => {
+        if(toggleClass === "navbar") {
+            setToggleClass('navbar responsive');
+        } else {
+            setToggleClass('navbar');
+        }
+    }
+
     return (
-            <header className="header__banner">
+            <header className='header'>
                 <img className="header__logo" src="./logo4K_Immo.png" alt="Logo 4K Immo" />
-                {/* <div className="header__navbar">
-                    <a className="header__link" href="#presentation">Présentation</a>
-                    <a className="header__link" href="#cards">Logements</a>
-                    <a className="header__link" href="#contact">Contact</a>
-                </div> */}
+
+                {/* Bootstrap Navbar customized */}
+                <nav className={toggleClass}>                    
+                    <a href="#" className='navbar__toggle' onClick={toggleNavbar}>&#9776;</a>
+
+                    <a className='navbar__element' href="#intro">Présentation</a>
+                    <a className='navbar__element' href="#cards">Nos Logements</a>
+                    <a className='navbar__element' href="#form">Nous Contacter</a>
+                    {/* <a className='navbar__element' href="#">Onglet4</a> */}
+                </nav>
+
             </header>        
     )
 }
