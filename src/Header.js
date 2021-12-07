@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
             <header className='header'>
-                <img className="header__logo" src="./logo4K_Immo.png" alt="Logo 4K Immo" />
+                <img className="header__logo" src="./Logo4K_Immo.jpg" alt="Logo 4K Immo" />
 
                 {/* Bootstrap Navbar customized */}
                 <nav className={toggleClass}>                    
